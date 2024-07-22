@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    line-height: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    outline: 0;
+}
+
+header, input, label, select, option , h3, #text_area, button, ul, li, .item-container, .input-container, ul, li, h2, .tablemodal{
+    display: none;
+}
+
+.line {
+    margin: auto;
+    font-size: 15px;
+}
+
+.line_down {
+    float: right;
+    font-size: 15px;
+}
+
+#img {
+    margin-left: 40px;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Na Brasa - estoque</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/3219e8c592.js" crossorigin="anonymous"></script>
+    <link
+      rel="shortcut icon"
+      href="../assets/estoque.png"
+      type="image/x-icon"
+      widh="850px"
+    />
+</head>
+
+<header>
+  <div class="cont">
+    <a href='../index.html'><i class="fa-solid fa-arrow-left fa-xl"></i></a>
+      <nav>
+          <ul class="nav-links">
+              <li><a id="open-modal">Add Itens</a></li>
+          </ul>
+      </nav>
+      <a href="#" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+      </a>
+  </div>
+</header>
+
+<body onload="carregarTotalEstoque('totalEstoque')">
+
+  <div class="carrinho">
+    <img src="/assets/carrinhoCompras.png">
+    <p>Itens no estoque: <span id="totalEstoque">0</span></p>
+</div>
+
+<table id="tabelaEstoque" class="tabela">
+  <thead>
+      <tr>
+          <th>Nome do produto</th>
+          <th>Código do produto</th>
+          <th>Quantidade no estoque</th>
+          <th>Ações</th>
+      </tr>
+  </thead>
+  <tbody>
+      <!-- Os dados do estoque serão inseridos aqui -->
+  </tbody>
+</table>
+
+<!-- Modal -->
+<div id="fade" class="hide"></div>
+<div id="modal" class="hide">
+  <div class="modal-header">
+    <h2>Fechamento de Caixa</h2>
+    <button id="close-modal"><i class="fa-solid fa-xmark fa-2xl"></i></button>
+  </div>
+
+  <div class="form-container">
+    <!-- Nome do produto -->
+    <input id="txtNomeProduto" type="text" placeholder="Nome do Produto">
+    <!-- Código do produto -->
+    <input id="txtCodProduto" type="text" placeholder="Código do Produto">
+    <!-- Quantidade do produto -->
+    <input id="qtidadeProduto" type="number" placeholder="Quantidade do Produto">
+    <!--Botoes-->
+    <input type="button" value="Cadastrar" class="alinhaBtns" onclick="validarProduto('txtNomeProduto','txtCodProduto','qtidadeProduto')">
+  </div>
+</div> 
+
+</div>
+</body>
+<script src="js.js"></script>
+</html>

@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    background-color: #febb2a; /* Laranja */
+    color: white;
+    padding: 10px 0;
+    height: 60px;
+}
+
+.cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.cont i {
+    color: white;
+}
+     
+.cont i:visited {
+    color: white;
+}
+     
+.cont i:hover {
+    color: #ffffff;
+}
+     
+
+.cont i:active {
+    color: rgb(255, 255, 255);
+}
+
+
+.logo {
+    font-size: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.nav-links a:hover {
+    color: #000;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: white;
+    margin-bottom: 4px;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #febb2a;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+body {
+    background-image: url(/assets/v642-nap-37-fastfood.jpg);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container input[type="reset"] {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.form-container input[type="text"]:focus,
+.form-container input[type="number"]:focus,
+.form-container input[type="reset"]:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.form-container input[type="button"],
+.form-container input[type="reset"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #FFC107;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.form-container input[type="button"]:hover,
+.form-container input[type="reset"]:hover {
+    background-color: #e0a800;
+}
+.carrinho {
+    width: 450px; 
+    float:right;
+    padding-bottom: 20px;
+}
+
+.carrinho p {
+    display: inline;
+}
+
+
+#fade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+  }
+  
+#modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width:600px;
+    max-width: 90%;
+    height: 450px;
+    max-height: 90%;
+    background-color: #fff;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    z-index: 10;
+  }
+
+#fade,
+#modal {
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+}
+  
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+  
+.modal-body p {
+    margin-bottom: 1rem;
+}
+  
+#modal.hide,
+  #fade.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+  
+#modal.hide {
+    top: 0;
+}
+
+.close {
+    width: 150px;
+    height: 40px;
+    background-color: white;
+    color: #febb2a;
+    border-radius: 0.5em;
+    font-size: 15px;
+    border: 1px solid;
+    margin-left: 1000px;
+    margin-top: 20px;
+}
+
+#text-modal {
+    width: 100%;
+    height: 600px;
+
+}
+
+.tabela, .tabela th, .tabela td{
+    border-collapse: collapse; /*define a separação entre as bordar*/
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+    table-layout: fixed;
+    margin-top: 30px;
+}
+th{
+    background-color: #ffffff;
+}
+
+.tabela tbody {
+    background-color: rgba(254, 187, 42, 0.5);
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#open-modal {
+    color: var(--color1);
+}
+
+
+.btn {
+    padding: 6px 12px;
+    margin: 2px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #fff;
+}
+.btn-edit {
+    background-color: #4CAF50; /* Verde */
+}
+.btn-edit:hover {
+    background-color: #45a049;
+}
+.btn-delete {
+    background-color: #f44336; /* Vermelho */
+}
+.btn-delete:hover {
+    background-color: #da190b;
+}

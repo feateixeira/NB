@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Na Brasa - pedidos</title>
+    <link rel="stylesheet" href="./style.css" media="screen">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@3.1.0/dist/css/multi-select-tag.css">
+    <link rel="stylesheet" href="./impressora.css" media="print">
+    <link
+      rel="shortcut icon"
+      href="assets/hamburguer.png"
+      type="image/x-icon"
+      widh="850px"
+    />
+</head>
+<body>
+<!-- header da pagina -->
+<header>
+  <div class="cont">
+      <h1 class="logo">NABRASA 🔥</h1>
+      <nav>
+          <ul class="nav-links">
+              <li><a id="open-modal">Fechamento de caixa</a></li>
+              <li><a href="/estoque/estoque.html">Estoque</a></li>
+          </ul>
+      </nav>
+      <a href="#" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+      </a>
+  </div>
+</header>
+
+<!-- conteudo principal -->
+
+  <div class="container">
+
+      <div class="box">
+
+        <form action="" onsubmit="return false">
+
+          <input id="name" class="inpt" type="text" 
+            placeholder="Nome/Endereço:" autocomplete="off">          
+            
+          <h3>Hamburger:</h3>
+        
+          <label class="label">
+          <input class="input" type="radio" id="NB" name="nb" value="NB/Simples">
+            Na brasa simples
+          </label>
+        
+          <label class="label">
+          <input class="input" type="radio" id="NB" name="nb" value="NB/Duplo">
+            Na brasa duplo
+          </label>
+          
+          <label class="label">
+            <input class="input" type="radio" id="NB" name="nb" value="NB/Triplo">
+            Na brasa triplo
+          </label>  <br><br>
+
+          <label class="label">
+            <input class="input" type="radio" id="NB" name="nb" value="NB/S Especial">
+            Na brasa simples Especial
+          </label>
+
+          <label class="label">
+            <input class="input" type="radio" id="NB" name="nb" value="NB/D Especial">
+            Na brasa duplo Especial
+          </label>
+
+          <label class="label">
+            <input class="input" type="radio" id="NB" name="nb" value="NB/T Especial">
+            Na brasa triplo Especial
+          </label>
+
+          <h3>Molho:</h3>
+        
+          <label class="label" > 
+          <input class="input" type="checkbox" id="check" name="molho" value="Cebola">
+            Cebola
+          </label>
+          
+          <label class="label">
+          <input class="input" type="checkbox" id="check" name="molho" value="Alho">
+            Alho
+          </label>
+          
+          <label class="label">
+            <input class="input" type="checkbox" id="check" name="molho" value="Azeitona">
+            Azeitona
+          </label>
+
+          <label class="label">
+            <input class="input" type="checkbox" id="check" name="molho" value="Bacon">
+            Bacon
+          </label><br>
+
+          <label class="label">
+            <input class="input" type="checkbox" id="check" name="molho" value="Mos&Mel">
+            Mostarda & Mel
+          </label>
+
+          <label class="label">
+            <input class="input" type="checkbox" id="check" name="molho" value="Ervas">
+            Ervas
+          </label>
+
+          <label class="label">
+            <input class="input" type="checkbox" id="check" name="molho" value="SEM MOLHO">
+            SEM MOLHO
+          </label>
+
+          <textarea id="text_area" placeholder="Obs:"></textarea>
+
+          <h3>Batatas:</h3>
+
+          <label class="label">
+            <input class="input" type="checkbox" id="bt" name="potato" value="Batata SIMPLES">
+              Simples
+            </label>
+
+          <label class="label">
+            <input class="input" type="checkbox" id="bt" name="potato" value="Batata MÉDIA">
+              Média
+          </label>
+
+          <label class="label">
+            <input class="input" type="checkbox" id="bt" name="potato" value="Batata NABRASA">
+              Especial Na Brasa 🔥
+          </label>
+
+          <h3>Bebidas:</h3>
+
+          <div class="select">
+            <label for="drinks">selecione a bebida</label>
+            <select name="drink" id="drink" multiple>
+              <option value="Coca-cola 2l">Coca-Cola 2l</option>
+              <option value="Guaraná 2l">Guaraná 2l</option>
+              <option value="Spite 2l">Spite 2l</option>
+              <option value="Coca-Cola 600ml">Coca-Cola 600ml</option>
+              <option value="Coca-Cola Z 600ml">Coca-Cola Zero 600ml</option>
+              <option value="Guaraná 600ml">Guaraná 600ml</option>
+              <option value="Guaraná Z 600ml">Guaraná Zero 600ml</option>
+              <option value="Sprite 600ml">Sprite 600ml</option>
+              <option value="Coca-Cola lata">Coca-Cola lata</option>
+              <option value="Coca-Cola Z lata">Coca-Cola Zero lata</option>
+              <option value="Guaraná lata">Guaraná lata</option>
+              <option value="Shewpps lata">Shewpps lata</option>
+              <option value="Água com gás">Água com gás</option>          
+              <option value="H2O Limoneto 500ml">H2O Limoneto 500ml</option>
+              <option value="Suco Dell Vale Maracujá 1lt">Suco Dell Vale Maracujá 1lt</option>
+              <option value="Suco Dell Vale Uva 1lt">Suco Dell Vale Uva 1lt</option>
+              <option value="Suco Dell Vale Caju 1lt">Suco Dell Vale Caju 1lt</option>
+              <option value="Suco Dell Vale Laranja 1lt">Suco Dell Vale Laranja 1lt</option>
+              <option value="Suco Natural 330ml (Laranja)">Suco Natural 330ml - Laranja</option>
+              <option value="Suco Natural 330ml (Maracujá)">Suco Natural 330ml - Maracujá</option>
+              <option value="Suco Natural 330ml (Abacaxi/hortelã)">Suco Natural 330ml - Abacaxi/hortelã</option>
+              <option value="Suco Natural 1lt (Laranja)">Suco Natural 1l - Laranja</option>
+              <option value="Suco Natural 1lt (Maracujá)">Suco Natural 1l - Maracujá</option>
+              <option value="Suco Natural 1lt (Abacaxi/hortelã)">Suco Natural 1l - Abacaxi/hortelã</option>
+            </select>
+          </div>
+          <input id="value" class="in" type="number" step="0.01"
+            placeholder="Valor:" autocomplete="off">
+
+            <select name="payment" id="payment">
+              <option value="">Selecione o tipo de pagamento</option>
+              <option value="(crédito)">Crédito</option>
+              <option value="(débito)">Débito</option>
+              <option value="(pix)">Pix</option>
+              <option value="(dinheiro)">Dinheiro</option>
+            </select>
+          <button class="inp" id="send" onclick="principal();eraseText();">Adicionar</button>
+
+        </form>
+      </div>
+
+      <div class="box">
+        <h3>Pedidos Feitos:</h3>
+        <div class="tab">
+          <table id="table_up">
+            <thead>
+              <tr>
+                <td></td>
+              </tr>
+              </thead>
+          </table>
+          <table id="table">
+            <thead>
+              <tr>
+                <td></td>
+              </tr>
+              </thead>
+          </table>
+          <table id="table_value">
+              <thead>
+                <tr>
+                  <td></td>
+                </tr>
+              </thead>
+          </table>
+
+          <img id="img" src="assets/fce269a4-ab2d-4b4f-a5e1-540c0e36da35.jpg" width="200px" alt="">
+        </div>
+        <button class="inp" id="print" onclick="window.print();clearTable();" >Imprimir</button>
+      </div>
+
+  </div>
+
+  <!-- Modal -->
+<div id="fade" class="hide"></div>
+<div id="modal" class="hide">
+  <div class="modal-header">
+    <h2>Fechamento de Caixa</h2>
+    <button id="close-modal"><i class="fa-solid fa-xmark fa-2xl"></i></button>
+  </div>
+
+  <table id="resultsTable">
+    <thead>
+        <tr>
+            <th class="tablemodal">Item</th>
+            <th class="tablemodal">Quantidade</th>
+        </tr>
+    </thead>
+    <tbody class="tablemodal">
+    </tbody>
+</table>
+  <div class="button-container">
+    <button class="btnDownload" onclick="downloadXML()">Download XML</button>
+  </div>
+</div>
+  
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@3.1.0/dist/js/multi-select-tag.js"></script>
+    <script>
+      new MultiSelectTag('drink', {
+    rounded: true,    // default true
+    shadow: true,      // default false
+    placeholder: 'Search',  // default Search...
+    tagColor: {
+        textColor: '#327b2c',
+        borderColor: '#92e681',
+        bgColor: '#eaffe6',
+    },
+    onChange: function(values) {
+     valores = values
+    }
+}) // id
+  </script>
+</body>
+</html>
